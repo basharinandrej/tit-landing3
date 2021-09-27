@@ -54,24 +54,25 @@ document.addEventListener('DOMContentLoaded', function() {
             1200 : {
                 nav: true,
                 loop:true,
+                autoplay: false
             },
             768 : {
                 items: 1,
                 nav: false,
                 loop:true,
-                autoplayHoverPause: true
+                autoplay: false
             },
             360 : {
                 items: 1,
                 nav: false,
                 loop:true,
-                autoplayHoverPause: true
+                autoplay: false
             },
             320 : {
                 items: 1,
                 nav: false,
                 loop:true,
-                autoplayHoverPause: true
+                autoplay: false
             }
         }
     });
