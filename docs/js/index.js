@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             1200 : {
                 nav: true,
                 loop:true,
-                autoplay: false
+                autoplay: true
             },
             768 : {
                 items: 1,
