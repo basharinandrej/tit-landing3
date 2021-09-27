@@ -53,22 +53,25 @@ document.addEventListener('DOMContentLoaded', function() {
         responsive : {
             1200 : {
                 nav: true,
-                loop:true
+                loop:true,
             },
             768 : {
                 items: 1,
                 nav: false,
-                loop:true
+                loop:true,
+                autoplayHoverPause: true
             },
             360 : {
                 items: 1,
                 nav: false,
-                loop:true
+                loop:true,
+                autoplayHoverPause: true
             },
             320 : {
                 items: 1,
                 nav: false,
-                loop:true
+                loop:true,
+                autoplayHoverPause: true
             }
         }
     });
