@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.toggle('open')
         }
     }
-    const nextArrow = `<div class="main-slider__next-arrow next-arrow">
+    const nextArrow = `<div class="main-slider__next-arrow next-arrow next-arrow--js">
         <svg width="22" height="22" role="img" class="next-arrow__svg">
             <use xlink:href="./images/sprite.svg#icon-vector"></use>
         </svg>
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </svg>
         </div>
     </div>`
-    const prevArrow = `<div class="main-slider__prev-arrow prev-arrow">
+    const prevArrow = `<div class="main-slider__prev-arrow prev-arrow prev-arrow--js">
          <svg width="22" height="22" role="img" class="next-arrow__svg">
             <use xlink:href="./images/sprite.svg#icon-vector"></use>
          </svg>
@@ -76,6 +76,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
+    $('.next-arrow--js').on('click',function(){
+        $('.main-slider').trigger('stop.owl.autoplay')
+        $('circle').removeClass('progress')
+    })
+    $('.prev-arrow--js').on('click',function(){
+        $('.main-slider').trigger('stop.owl.autoplay')
+        $('circle').removeClass('progress')
+    })
+
 }, false);
 
 
